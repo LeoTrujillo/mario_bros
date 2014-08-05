@@ -3,10 +3,31 @@ rojo = #FC2000
 cafe = #C46000
 carne = #FC9C11
 body
-	background withe
+	background azul
 	font-size 10px
+
+@-webkit-keyframes slidein
+	from
+		margin-left 0%
+		width 500%
+	to
+		margin-left 100%
+		width 100%
+@-moz-keyframes slidein
+	from
+		margin-left 0%
+		width 500%
+	to
+		margin-left 100%
+		width 100%
 .mario
 	margin-left 5em
+	-webkit-animation-duration 3s
+	-webkit-animation-name slidein
+	-webkit-animation-iteration-count infinite
+	-moz-animation-duration 3s
+	-moz-animation-name slidein
+	-moz-animation-iteration-count infinite
 	.gorra
 		.pg1
 			background rojo
@@ -217,3 +238,8 @@ body
 			height 1.5em
 			margin-left 12.5em
 			width 8.5em
+.piso
+	background green
+	width 100%
+	height 30em
+	margin 0
